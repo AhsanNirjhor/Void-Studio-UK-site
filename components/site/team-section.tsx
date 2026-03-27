@@ -13,7 +13,7 @@ const avatarStyles: Record<"purple" | "teal" | "blue", string> = {
 export function TeamSection() {
   return (
     <section id="team" className="section-dark border-t border-[#1a1d44]">
-      <div className="mx-auto grid w-full max-w-[1120px] gap-10 px-6 py-16 lg:grid-cols-[1fr_0.98fr]">
+      <div className="mx-auto grid w-full max-w-[1120px] gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1fr_0.98fr]">
         <div>
           <Badge
             variant="outline"
@@ -50,13 +50,13 @@ export function TeamSection() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {teamMembers.map((member) => (
             <Card
               key={member.name}
               className={cn(
                 "rounded-[14px] border-[#2a2e57] bg-[#1b1f3c] px-4 py-4",
-                member.wide && "col-span-2 lg:col-span-3",
+                member.wide && "col-span-1 sm:col-span-2 lg:col-span-3",
               )}
             >
               <div

@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 export function CaseStudiesSection() {
   return (
     <section id="case-studies" className="border-t border-[#1c2051] bg-[#070918] pb-24 pt-6">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
         <h2 className="text-center text-5xl font-semibold text-[#f8f8ff] md:text-[3.8rem]">
           Real Projects, Real Results
         </h2>
@@ -35,7 +35,7 @@ export function CaseStudiesSection() {
               >
                 {study.title}
               </h3>
-              <div className="mt-7 grid grid-cols-3 gap-4 text-[0.98rem] font-medium leading-[1.35] text-[#d2d3e4]">
+              <div className="mt-7 grid grid-cols-1 gap-2 text-[0.98rem] font-medium leading-[1.35] text-[#d2d3e4] sm:grid-cols-3 sm:gap-4">
                 {study.metrics.map((metric) => (
                   <p key={metric}>{metric}</p>
                 ))}
