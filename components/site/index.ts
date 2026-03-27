@@ -34,3 +34,6 @@ export { StartupBuildSection } from "@/components/site/startup-build-section";
 export { StartupSuccessStoriesSection } from "@/components/site/startup-success-stories-section";
 export { StartupPricingSection } from "@/components/site/startup-pricing-section";
 export { StartupFinalCtaSection } from "@/components/site/startup-final-cta-section";
+export { ContactPageHeroSection } from "@/components/site/contact-page-hero-section";
+export { ContactPageMainSection } from "@/components/site/contact-page-main-section";
+export { ContactFaqSection } from "@/components/site/contact-faq-section";

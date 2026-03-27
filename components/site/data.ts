@@ -174,6 +174,17 @@ export type StartupPricingPlan = {
   featured?: boolean;
 };
 
+export type ContactInfoItem = {
+  icon: "mail" | "phone" | "location";
+  label: string;
+  value: string;
+};
+
+export type ContactFaqItem = {
+  question: string;
+  answer: string;
+};
+
 export const navItems: NavItem[] = [
   { label: "Services", href: "/services" },
   { label: "Work", href: "/#case-studies" },
@@ -902,5 +913,63 @@ export const startupPricingPlans: StartupPricingPlan[] = [
       "Compliance & security audit",
       "Retainer support available",
     ],
+  },
+];
+
+export const contactInfoItems: ContactInfoItem[] = [
+  {
+    icon: "mail",
+    label: "Email",
+    value: "hello@voidstudio.co.uk",
+  },
+  {
+    icon: "phone",
+    label: "Phone",
+    value: "+44 20 1234 5678",
+  },
+  {
+    icon: "location",
+    label: "Location",
+    value: "London, United Kingdom",
+  },
+];
+
+export const contactServiceOptions = [
+  "AI Automation & Agents",
+  "Accounting Automation",
+  "eLegal Platform",
+  "Custom Software Development",
+  "Data & Business Intelligence",
+  "Consulting & Retainer",
+];
+
+export const contactBudgetOptions = [
+  "£500 - £2k",
+  "£2k - £5k",
+  "£5k - £12k",
+  "£12k - £25k",
+  "£25k+",
+];
+
+export const contactFaqs: ContactFaqItem[] = [
+  {
+    question: "How quickly can you start?",
+    answer:
+      "For most projects, we can kick off within 1-2 weeks of signed proposal. Discovery calls typically happen within 2-3 business days of inquiry.",
+  },
+  {
+    question: "Do you work with clients outside the UK?",
+    answer:
+      "Yes! While we are UK-based, we work with clients globally. Most communication happens async via Slack/email, with weekly video calls.",
+  },
+  {
+    question: "What is your minimum project size?",
+    answer:
+      "For custom software, our minimum is typically £5k. For consulting/retainers, we start at £100/month. We are upfront about whether we are a good fit.",
+  },
+  {
+    question: "Do you offer ongoing support after launch?",
+    answer:
+      "Absolutely. All projects include post-launch support (30-90 days depending on tier), and we offer retainer packages for ongoing maintenance and development.",
   },
 ];

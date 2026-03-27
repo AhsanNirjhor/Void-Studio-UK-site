@@ -52,7 +52,7 @@ export function SiteHeader() {
             <SunIcon className="size-4 text-white" />
           </Button>
           <Link
-            href="/#contact"
+            href="/contact"
             className="hidden h-10 items-center rounded-xl border border-[#3d3276] px-4 sm:px-7 text-[0.92rem] font-semibold text-white transition-colors hover:border-[#6f57d9] hover:bg-[#110e2a] sm:inline-flex"
           >
             Contact
@@ -90,7 +90,7 @@ export function SiteHeader() {
           </nav>
           <div className="mt-4 flex gap-2">
             <Link
-              href="/#contact"
+              href="/contact"
               onClick={() => setIsMenuOpen(false)}
               className="inline-flex h-10 flex-1 items-center justify-center rounded-lg border border-[#3d3276] text-[0.92rem] font-semibold text-white"
             >
