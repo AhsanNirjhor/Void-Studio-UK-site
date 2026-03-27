@@ -124,13 +124,63 @@ export type TeamExpertiseCard = {
   icon: "code" | "brain" | "shield" | "palette" | "trend" | "users";
 };
 
+export type StartupValidatorStat = {
+  icon: "target" | "bolt" | "check";
+  value: string;
+  title: string;
+  description: string;
+};
+
+export type StartupDeliverable = {
+  icon: "trend" | "sparkles" | "rocket" | "users";
+  title: string;
+  description: string;
+  badge: string;
+};
+
+export type StartupPillar = {
+  icon: "bolt" | "trend" | "shield" | "users" | "code" | "target";
+  title: string;
+  description: string;
+};
+
+export type StartupProgramHighlight = {
+  icon: "clock" | "check" | "users";
+  title: string;
+  description: string;
+};
+
+export type StartupBuildCard = {
+  title: string;
+  description: string;
+  examples: string;
+};
+
+export type StartupSuccessStory = {
+  stage: string;
+  title: string;
+  challenge: string;
+  solution: string;
+  outcome: string;
+};
+
+export type StartupPricingPlan = {
+  title: string;
+  price: string;
+  timeline: string;
+  description: string;
+  features: string[];
+  popular?: boolean;
+  featured?: boolean;
+};
+
 export const navItems: NavItem[] = [
   { label: "Services", href: "/services" },
   { label: "Work", href: "/#case-studies" },
   { label: "MVP Validator", href: "/#process" },
   { label: "About", href: "/about" },
   { label: "Team", href: "/team" },
-  { label: "For Startups", href: "/#industries" },
+  { label: "For Startups", href: "/for-startups" },
 ];
 
 export const operationalCards: OperationalCardItem[] = [
@@ -634,5 +684,223 @@ export const teamExpertiseCards: TeamExpertiseCard[] = [
       "AWS, Docker, Kubernetes, CI/CD. Reliable, scalable infrastructure that grows with you.",
     bullets: ["AWS & Cloud", "CI/CD Pipelines", "Monitoring", "Performance"],
     icon: "users",
+  },
+];
+
+export const startupValidatorStats: StartupValidatorStat[] = [
+  {
+    icon: "target",
+    value: "150+",
+    title: "Startups Assessed",
+    description: "From pre-seed to Series A",
+  },
+  {
+    icon: "bolt",
+    value: "10 min",
+    title: "Assessment Time",
+    description: "Get results instantly",
+  },
+  {
+    icon: "check",
+    value: "100%",
+    title: "Free Forever",
+    description: "No credit card required",
+  },
+];
+
+export const startupDeliverables: StartupDeliverable[] = [
+  {
+    icon: "trend",
+    title: "6-Dimension Scorecard",
+    badge: "Shareable",
+    description:
+      "AI analysis across problem fit, market readiness, traction, tech viability, team strength, and execution capacity",
+  },
+  {
+    icon: "sparkles",
+    title: "Personalized AI Report",
+    badge: "AI-Powered",
+    description:
+      "Not generic templates-a 300-word strategic assessment written specifically for YOUR startup by Claude AI",
+  },
+  {
+    icon: "rocket",
+    title: "3 Priority Recommendations",
+    badge: "Actionable",
+    description:
+      "Specific, actionable next steps you can execute in the next 30 days to strengthen your position",
+  },
+  {
+    icon: "users",
+    title: "Matched Service Recommendations",
+    badge: "Custom Match",
+    description:
+      "See exactly how Void Studio can help based on your biggest gaps-product strategy, rapid MVP build, or fractional CTO support",
+  },
+];
+
+export const startupPillars: StartupPillar[] = [
+  {
+    icon: "bolt",
+    title: "Launch in Weeks, Not Months",
+    description:
+      "We understand startup velocity. Our MVP Builder gets you from concept to launch in 4-8 weeks with production-ready code.",
+  },
+  {
+    icon: "trend",
+    title: "Built to Scale from Day One",
+    description:
+      "We architect for growth, not just your MVP. Scale from 10 to 10,000 users without rebuilding from scratch.",
+  },
+  {
+    icon: "shield",
+    title: "Investor-Ready from the Start",
+    description:
+      "GDPR-compliant, secure architecture, and clean code. Pass technical due diligence with confidence when fundraising.",
+  },
+  {
+    icon: "users",
+    title: "Fractional CTO Partnership",
+    description:
+      "Get strategic tech leadership and guidance throughout your journey-without the £150k/year full-time hire.",
+  },
+  {
+    icon: "code",
+    title: "Modern, Maintainable Stack",
+    description:
+      "React, Node.js, PostgreSQL, AWS. An investor-friendly stack that attracts engineering talent and scales efficiently.",
+  },
+  {
+    icon: "target",
+    title: "Focus on What Matters",
+    description:
+      "We handle the technical complexity so you can focus on customers, product-market fit, and growth.",
+  },
+];
+
+export const startupProgramHighlights: StartupProgramHighlight[] = [
+  {
+    icon: "clock",
+    title: "4-8 Week Delivery",
+    description: "From kickoff to launch",
+  },
+  {
+    icon: "check",
+    title: "Production-Ready",
+    description: "Scalable architecture",
+  },
+  {
+    icon: "users",
+    title: "Full Ownership",
+    description: "Your code, your data",
+  },
+];
+
+export const startupBuildCards: StartupBuildCard[] = [
+  {
+    title: "B2B SaaS Platforms",
+    description:
+      "Multi-tenant platforms with authentication, billing, role-based access, and admin dashboards. Launch with everything you need to onboard paying customers.",
+    examples:
+      "Project management tools, CRM systems, workflow automation, team collaboration platforms",
+  },
+  {
+    title: "Marketplace & Booking Platforms",
+    description:
+      "Two-sided marketplaces with listings, search, payments, messaging, and reviews. Built to handle growth from day one.",
+    examples:
+      "Service marketplaces, rental platforms, booking systems, gig economy apps",
+  },
+  {
+    title: "AI-Powered Products",
+    description:
+      "Integrate GPT-4, computer vision, or custom ML models directly into your product. Build a competitive moat with AI from launch.",
+    examples:
+      "AI copilots, document intelligence, automated analysis, chatbots, predictive tools",
+  },
+  {
+    title: "Mobile-First Apps (PWA)",
+    description:
+      "Progressive web apps that work seamlessly across iOS, Android, and desktop. No App Store approval delays, instant updates.",
+    examples: "Field service apps, customer portals, delivery apps, internal tools",
+  },
+];
+
+export const startupSuccessStories: StartupSuccessStory[] = [
+  {
+    stage: "PRE-SEED",
+    title: "FinTech Startup",
+    challenge:
+      "Needed investor-ready MVP with GDPR compliance before Series A pitch",
+    solution:
+      "Built full platform in 8 weeks with audit trails, compliance framework, and analytics",
+    outcome:
+      "Raised £800k Series A. Compliance became a competitive advantage in fundraising.",
+  },
+  {
+    stage: "SEED",
+    title: "PropTech Platform",
+    challenge:
+      "Struggling with technical debt from freelancer-built MVP. Could not scale.",
+    solution:
+      "Rebuilt platform with proper architecture, multi-tenancy, and automated workflows",
+    outcome:
+      "5x user growth in 6 months. Platform now handles 10k+ properties without issues.",
+  },
+  {
+    stage: "PRE-SEED",
+    title: "HealthTech Startup",
+    challenge: "Non-technical founder needed AI-powered patient triage system",
+    solution: "Fractional CTO guidance + custom AI system with 95%+ accuracy",
+    outcome:
+      "Secured NHS pilot contract. System processing 500+ patient assessments weekly.",
+  },
+];
+
+export const startupPricingPlans: StartupPricingPlan[] = [
+  {
+    title: "MVP Sprint",
+    price: "£5k - £12k",
+    timeline: "4-6 weeks",
+    description: "Perfect for validating your idea",
+    features: [
+      "Core feature set (3-5 features)",
+      "Basic authentication & user management",
+      "Mobile-responsive design",
+      "Database setup",
+      "30 days post-launch support",
+      "Source code ownership",
+    ],
+  },
+  {
+    title: "Launch-Ready Platform",
+    price: "£12k - £25k",
+    timeline: "6-10 weeks",
+    description: "Full product ready for customers",
+    features: [
+      "Complete feature set",
+      "User roles & permissions",
+      "Payment integration (Stripe)",
+      "Admin dashboard",
+      "Email notifications",
+      "Analytics & reporting",
+      "90 days support + training",
+    ],
+    popular: true,
+    featured: true,
+  },
+  {
+    title: "Scale-Ready System",
+    price: "£25k+",
+    timeline: "10-16 weeks",
+    description: "Enterprise-grade architecture",
+    features: [
+      "Multi-tenant platform",
+      "Advanced integrations",
+      "Custom AI/ML features",
+      "White-label options",
+      "Compliance & security audit",
+      "Retainer support available",
+    ],
   },
 ];
