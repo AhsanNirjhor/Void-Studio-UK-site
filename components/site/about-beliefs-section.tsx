@@ -19,7 +19,7 @@ const iconMap: Record<
 export function AboutBeliefsSection() {
   return (
     <section className="section-dark border-b border-[#171b41] py-14">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
         <h2 className="text-center text-[3.2rem] font-semibold leading-[1.12] text-[#f1f2fc]">
           What We Believe
         </h2>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export function ServicesCatalogSection() {
   return (
     <section className="section-dark pb-14 pt-4">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
         {detailedServices.map((service) => (
           <article
             key={service.number}

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export function ContactCtaSection() {
   return (
     <section id="contact" className="border-t border-[#2c2072] bg-[#321a77]">
-      <div className="mx-auto w-full max-w-[1120px] px-6 py-20 text-center">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 py-20 text-center">
         <h2 className="text-[3.8rem] font-semibold leading-[1.16] text-[#f4f6ff]">
           Ready to Eliminate Operational Waste?
         </h2>

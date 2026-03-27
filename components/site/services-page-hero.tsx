@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export function ServicesPageHero() {
   return (
     <section className="services-grid-bg border-b border-[#151944]">
-      <div className="mx-auto w-full max-w-[1120px] px-6 pb-20 pt-14">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 pb-20 pt-14">
         <div className="flex items-center gap-3 text-[0.95rem] text-[#6f7397]">
           <Link href="/" className="hover:text-[#acb0d3]">
             Home

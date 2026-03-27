@@ -29,7 +29,7 @@ const engagementCards = [
 export function ServicesEngagementSection() {
   return (
     <section className="section-dark border-t border-[#171b41] py-14">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
         <h2 className="text-center text-[3.5rem] font-semibold leading-[1.14] text-[#f1f2fc]">
           How Clients Typically Engage
         </h2>
@@ -37,7 +37,7 @@ export function ServicesEngagementSection() {
           Choose the model that fits your business stage and budget
         </p>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {engagementCards.map((card) => (
             <Card
               key={card.title}

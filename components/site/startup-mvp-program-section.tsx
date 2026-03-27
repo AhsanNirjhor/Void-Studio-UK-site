@@ -17,8 +17,8 @@ const iconMap: Record<ProgramIcon, (props: SVGProps<SVGSVGElement>) => ReactElem
 export function StartupMvpProgramSection() {
   return (
     <section className="section-dark border-b border-[#171b41] py-18">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
-        <Card className="rounded-[24px] border-[#2f3075] bg-linear-to-r from-[#130d35] to-[#0f2633] px-10 py-14 text-center">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
+        <Card className="rounded-[24px] border-[#2f3075] bg-linear-to-r from-[#130d35] to-[#0f2633] px-6 py-14 text-center sm:px-10">
           <Badge className="rounded-full bg-linear-to-r from-[#5a1cf1] to-[#8a4dff] px-7 py-2 text-[0.74rem] tracking-[0.18em] text-white">
             <SparklesIcon className="size-3.5" />
             MVP BUILDER PROGRAM
@@ -34,7 +34,7 @@ export function StartupMvpProgramSection() {
             overhead.
           </p>
 
-          <div className="mx-auto mt-9 grid max-w-[900px] gap-6 sm:grid-cols-3">
+          <div className="mx-auto mt-9 grid max-w-[900px] gap-6 md:grid-cols-3">
             {startupProgramHighlights.map((item) => {
               const Icon = iconMap[item.icon];
               return (
@@ -55,7 +55,7 @@ export function StartupMvpProgramSection() {
 
           <Button
             variant="hero"
-            className="mt-9 h-14 rounded-xl px-11 text-[1.12rem] font-semibold"
+            className="mt-9 h-14 w-full rounded-xl px-8 text-[1rem] font-semibold sm:w-auto sm:px-11 sm:text-[1.12rem]"
           >
             Start Your MVP Builder Journey
           </Button>

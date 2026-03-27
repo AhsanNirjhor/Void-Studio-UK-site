@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export function PricingSection() {
   return (
     <section className="section-dark border-t border-[#191c43]">
-      <div className="mx-auto w-full max-w-[1120px] px-6 pb-20 pt-16">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 pb-20 pt-16">
         <h2 className="text-center text-[3.5rem] font-semibold leading-[1.16] text-[#f7f8ff]">
           Transparent, outcome-focused pricing
         </h2>
@@ -14,7 +14,7 @@ export function PricingSection() {
           From £500 setup to full enterprise deployments
         </p>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {pricingTiers.map((tier) => (
             <Card
               key={tier.title}

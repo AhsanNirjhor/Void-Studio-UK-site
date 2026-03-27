@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 export function OperationalGapSection() {
   return (
     <section id="operational-gap" className="section-dark border-t border-[#1f1a4f]">
-      <div className="mx-auto w-full max-w-[1120px] px-6 pb-16 pt-20">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 pb-16 pt-20">
         <div className="mx-auto max-w-[900px] text-center">
           <Badge
             variant="amber"
@@ -26,7 +26,7 @@ export function OperationalGapSection() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-5 lg:grid-cols-3">
+        <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {operationalCards.map((item) => (
             <Card
               key={item.title}
@@ -64,7 +64,7 @@ export function OperationalGapSection() {
             <Button
               variant="hero"
               size="lg"
-              className="h-16 rounded-xl px-14 text-[1.2rem] font-semibold"
+              className="h-16 w-full rounded-xl px-8 text-[1.05rem] font-semibold sm:w-auto sm:px-14 sm:text-[1.2rem]"
             >
               <BoltIcon className="size-5" />
               Get Your Free Quote in 2 Minutes

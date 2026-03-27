@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export function ServicesSection() {
   return (
     <section id="services" className="section-dark">
-      <div className="mx-auto w-full max-w-[1120px] px-6 pb-14 pt-24">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 pb-14 pt-24">
         <div className="text-center">
           <h2 className="text-5xl font-semibold leading-[1.1] text-[#f7f8ff] md:text-[3.8rem]">
             What We Build For You
@@ -15,7 +15,7 @@ export function ServicesSection() {
           <div className="mx-auto mt-5 h-1.5 w-11 rounded-full bg-[#40d7c7]" />
         </div>
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-3">
+        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {serviceCards.map((card) => {
             const Icon = card.icon;
             return (
@@ -50,7 +50,7 @@ export function ServicesSection() {
           <Button
             variant="hero"
             size="lg"
-            className="h-16 rounded-xl px-14 text-[1.2rem] font-semibold"
+            className="h-16 w-full rounded-xl px-8 text-[1.05rem] font-semibold sm:w-auto sm:px-14 sm:text-[1.2rem]"
           >
             View All Services & Pricing
             <span aria-hidden>→</span>

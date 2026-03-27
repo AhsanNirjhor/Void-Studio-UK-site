@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export function AboutCtaSection() {
   return (
     <section className="section-dark border-b border-[#171b41] py-14">
-      <div className="mx-auto w-full max-w-[1120px] px-6 text-center">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 text-center">
         <h2 className="text-[3.5rem] font-semibold leading-[1.12] text-[#f1f2fc]">
           Ready to Work Together?
         </h2>

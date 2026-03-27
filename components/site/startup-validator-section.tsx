@@ -32,7 +32,7 @@ const deliverableIconMap: Record<
 export function StartupValidatorSection() {
   return (
     <section className="border-b border-[#171b41] bg-[#161131] py-18">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
         <div className="text-center">
           <Badge className="rounded-full bg-linear-to-r from-[#5a1cf1] to-[#8a4dff] px-8 py-2.5 text-[0.75rem] tracking-[0.16em] text-white">
             <SparklesIcon className="size-3.5" />
@@ -49,7 +49,7 @@ export function StartupValidatorSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {startupValidatorStats.map((item) => {
             const Icon = statIconMap[item.icon];
             return (
@@ -72,7 +72,7 @@ export function StartupValidatorSection() {
           })}
         </div>
 
-        <Card className="mt-12 rounded-[24px] border-[#2a2f58] bg-[#1b1f3d] px-10 py-12">
+        <Card className="mt-12 rounded-[24px] border-[#2a2f58] bg-[#1b1f3d] px-6 py-12 sm:px-10">
           <h3 className="text-center text-[3rem] font-semibold leading-[1.14] text-[#f1f2fc]">
             What You&apos;ll Receive
           </h3>
@@ -104,7 +104,7 @@ export function StartupValidatorSection() {
           </div>
         </Card>
 
-        <Card className="mt-12 rounded-[20px] border-[#2a4653] bg-linear-to-r from-[#1b1f3d] to-[#143340] px-9 py-9">
+        <Card className="mt-12 rounded-[20px] border-[#2a4653] bg-linear-to-r from-[#1b1f3d] to-[#143340] px-5 py-9 sm:px-9">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-[760px]">
               <div className="flex items-center gap-2 text-[#4dd7c9]">

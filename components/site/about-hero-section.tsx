@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 export function AboutHeroSection() {
   return (
     <section className="services-grid-bg border-b border-[#161a42]">
-      <div className="mx-auto w-full max-w-[1120px] px-6 pb-20 pt-14">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 pb-20 pt-14">
         <Badge
           variant="outline"
           className="rounded-full border-[#3a2f78] bg-[#130f30] px-5 py-2 text-[0.74rem] tracking-[0.18em] text-[#7d69d2]"

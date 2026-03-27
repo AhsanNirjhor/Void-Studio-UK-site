@@ -14,7 +14,7 @@ export function IndustriesSection() {
           {industries.map((industry) => (
             <div
               key={industry}
-              className="inline-flex shrink-0 items-center gap-3 rounded-full border border-[#293058] bg-[#1a1f3b] px-6 py-3 text-[1.05rem] font-semibold text-[#e4e6f6]"
+              className="inline-flex shrink-0 items-center gap-3 rounded-full border border-[#293058] bg-[#1a1f3b] px-4 sm:px-6 py-3 text-[1.05rem] font-semibold text-[#e4e6f6]"
             >
               <span className="h-2.5 w-2.5 rounded-full bg-[#45d4c4]" />
               {industry}

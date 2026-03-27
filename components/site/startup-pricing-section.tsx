@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 export function StartupPricingSection() {
   return (
     <section className="section-dark border-b border-[#171b41] py-18">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
         <h2 className="text-center text-[3.7rem] font-semibold leading-[1.14] text-[#f1f2fc]">
           MVP Builder Program
         </h2>

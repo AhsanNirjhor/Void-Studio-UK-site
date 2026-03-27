@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 export function ServicesEnquirySection() {
   return (
     <section className="section-dark border-t border-[#171b41] py-18">
-      <div className="mx-auto grid w-full max-w-[1120px] gap-10 px-6 lg:grid-cols-[1fr_1.05fr] lg:items-center">
+      <div className="mx-auto grid w-full max-w-[1120px] gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.05fr] lg:items-center">
         <div>
           <h2 className="text-[3.2rem] font-semibold leading-[1.16] text-[#f1f2fb]">
             Not sure which service fits?

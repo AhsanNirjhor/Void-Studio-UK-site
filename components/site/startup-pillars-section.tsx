@@ -18,7 +18,7 @@ const iconMap: Record<PillarIcon, (props: SVGProps<SVGSVGElement>) => ReactEleme
 export function StartupPillarsSection() {
   return (
     <section className="section-dark border-b border-[#171b41] py-18">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
         <h2 className="text-center text-[3.75rem] font-semibold leading-[1.15] text-[#f1f2fc]">
           Empowering Startups to Move Fast & Build Right
         </h2>

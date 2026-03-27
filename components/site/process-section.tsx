@@ -3,11 +3,11 @@ import { processSteps } from "@/components/site/data";
 export function ProcessSection() {
   return (
     <section id="process" className="section-dark">
-      <div className="mx-auto w-full max-w-[1120px] px-6 pb-20 pt-24">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 pb-20 pt-24">
         <h2 className="text-center text-5xl font-semibold text-[#f8f8ff] md:text-[3.8rem]">
           How It Works
         </h2>
-        <div className="mt-16 grid gap-10 lg:grid-cols-3">
+        <div className="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {processSteps.map((step, index) => (
             <div key={step.number}>
               <div className="flex items-center gap-5">

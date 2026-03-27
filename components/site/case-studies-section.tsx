@@ -35,7 +35,7 @@ export function CaseStudiesSection() {
               >
                 {study.title}
               </h3>
-              <div className="mt-7 grid grid-cols-1 gap-2 text-[0.98rem] font-medium leading-[1.35] text-[#d2d3e4] sm:grid-cols-3 sm:gap-4">
+              <div className="mt-7 grid grid-cols-1 gap-2 text-[0.98rem] font-medium leading-[1.35] text-[#d2d3e4] md:grid-cols-3 md:gap-4">
                 {study.metrics.map((metric) => (
                   <p key={metric}>{metric}</p>
                 ))}

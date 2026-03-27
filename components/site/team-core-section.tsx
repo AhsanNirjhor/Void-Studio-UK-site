@@ -5,12 +5,12 @@ import { Card } from "@/components/ui/card";
 export function TeamCoreSection() {
   return (
     <section className="section-dark border-b border-[#171b41] py-14">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
         <h2 className="text-center text-[3.2rem] font-semibold leading-[1.12] text-[#f1f2fc]">
           Meet the Core Team
         </h2>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {teamCoreMembers.map((member) => (
             <Card
               key={member.name}

@@ -11,7 +11,7 @@ const heroMetrics = [
 export function HeroSection() {
   return (
     <section id="home" className="hero-gradient relative overflow-hidden">
-      <div className="relative mx-auto flex w-full max-w-[1120px] flex-col items-center px-6 pb-18 pt-28 text-center md:pb-24 md:pt-36">
+      <div className="relative mx-auto flex w-full max-w-[1120px] flex-col items-center px-4 sm:px-6 pb-18 pt-24 text-center md:pb-24 md:pt-32">
         <Badge variant="cyan" className="rounded-full px-8 py-2.5 text-xs">
           [ AI-NATIVE AGENCY ]
         </Badge>
@@ -23,11 +23,11 @@ export function HeroSection() {
           operational costs by 25%+ for SMEs across logistics, finance, and
           professional services.
         </p>
-        <div className="mt-12 flex flex-col gap-4 sm:flex-row">
+        <div className="mt-12 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
           <Button
             variant="hero"
             size="lg"
-            className="h-16 min-w-[290px] rounded-xl px-12 text-[1.2rem] font-semibold"
+            className="h-16 w-full rounded-xl px-8 text-[1.05rem] font-semibold sm:min-w-[290px] sm:px-12 sm:text-[1.2rem]"
           >
             <BoltIcon className="size-5" />
             Get Instant Quote in 2 Minutes
@@ -35,12 +35,12 @@ export function HeroSection() {
           <Button
             variant="heroOutline"
             size="lg"
-            className="h-16 min-w-[220px] rounded-xl px-12 text-[1.2rem] font-semibold"
+            className="h-16 w-full rounded-xl px-8 text-[1.05rem] font-semibold sm:min-w-[220px] sm:px-12 sm:text-[1.2rem]"
           >
             See Our Work
           </Button>
         </div>
-        <div className="mt-16 grid w-full max-w-[880px] grid-cols-1 gap-10 sm:grid-cols-3">
+        <div className="mt-16 grid w-full max-w-[880px] grid-cols-1 gap-10 md:grid-cols-3">
           {heroMetrics.map((metric) => (
             <div key={metric.label}>
               <div className="text-[2.8rem] font-bold leading-none text-[#45d8c8]">

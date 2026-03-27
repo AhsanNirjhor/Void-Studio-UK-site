@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 export function ValuePropositionSection() {
   return (
     <section id="about" className="border-t border-[#131737] bg-[#050716]">
-      <div className="mx-auto grid w-full max-w-[1120px] gap-10 px-6 py-20 lg:grid-cols-[1fr_0.95fr] lg:items-center">
+      <div className="mx-auto grid w-full max-w-[1120px] gap-10 px-4 sm:px-6 py-20 lg:grid-cols-[1fr_0.95fr] lg:items-center">
         <div>
           <h2 className="max-w-[650px] text-5xl font-semibold leading-[1.18] text-[#f8f8ff] md:text-[3.8rem]">
             We don&apos;t sell software.

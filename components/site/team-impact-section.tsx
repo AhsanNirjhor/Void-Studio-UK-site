@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 export function TeamImpactSection() {
   return (
     <section className="section-dark border-b border-[#171b41]">
-      <div className="mx-auto grid w-full max-w-[1120px] gap-10 px-6 py-14 lg:grid-cols-[1fr_0.92fr] lg:items-start">
+      <div className="mx-auto grid w-full max-w-[1120px] gap-10 px-4 sm:px-6 py-14 lg:grid-cols-[1fr_0.92fr] lg:items-start">
         <div>
           <h2 className="text-[3.2rem] font-semibold leading-[1.12] text-[#f1f2fc]">
             Small Team, Big Impact

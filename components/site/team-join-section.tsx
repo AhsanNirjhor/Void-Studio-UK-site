@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 export function TeamJoinSection() {
   return (
     <section className="section-dark border-b border-[#171b41] py-14">
-      <div className="mx-auto w-full max-w-[1120px] px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6">
         <Card className="rounded-[16px] border-[#2a2f58] bg-[#1b1f3d] px-8 py-14 text-center">
           <h2 className="text-[3.1rem] font-semibold leading-[1.12] text-[#f1f2fc]">
             Want to Join Our Team?

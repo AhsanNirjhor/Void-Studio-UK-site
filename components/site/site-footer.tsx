@@ -6,7 +6,7 @@ const socials = ["LinkedIn", "Twitter", "GitHub"];
 export function SiteFooter() {
   return (
     <footer className="border-t border-[#171a3e] bg-[#070a1f]">
-      <div className="mx-auto w-full max-w-[1120px] px-6 py-14">
+      <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 py-14">
         <div className="grid gap-10 md:grid-cols-[1.1fr_1fr_1fr_1fr]">
           <div>
             <h3 className="font-display text-[2.3rem] font-extrabold tracking-[-0.02em] text-[#f2f3ff]">
