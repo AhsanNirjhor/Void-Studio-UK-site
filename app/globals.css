@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050715;
+  --foreground: #f3f3ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans:
+    "Manrope", "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-display:
+    "Sora", "Space Grotesk", "Avenir Next Condensed", "Trebuchet MS", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Manrope", "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.font-display {
+  font-family:
+    "Sora", "Space Grotesk", "Avenir Next Condensed", "Trebuchet MS", sans-serif;
+}
+
+.hero-gradient {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 50% 84%,
+      rgba(136, 56, 255, 0.82) 0%,
+      rgba(72, 26, 178, 0.8) 33%,
+      rgba(48, 14, 119, 0.88) 63%,
+      rgba(36, 8, 88, 0.95) 80%,
+      rgba(28, 10, 74, 1) 100%
+    ),
+    linear-gradient(180deg, #2f0878 0%, #2a0a6c 40%, #210852 100%);
+}
+
+.hero-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.65) 1px, transparent 1px);
+  background-size: 5px 5px;
+}
+
+.section-dark {
+  background: #070918;
+}
+
+.services-grid-bg {
+  background-color: #060816;
+  background-image:
+    linear-gradient(to right, rgba(111, 115, 151, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(111, 115, 151, 0.09) 1px, transparent 1px);
+  background-size: 45px 45px;
+}
+
+.muted-line {
+  border-color: #25294c;
+}
+
+.hidden-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
