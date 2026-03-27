@@ -37,3 +37,6 @@ export { StartupFinalCtaSection } from "@/components/site/startup-final-cta-sect
 export { ContactPageHeroSection } from "@/components/site/contact-page-hero-section";
 export { ContactPageMainSection } from "@/components/site/contact-page-main-section";
 export { ContactFaqSection } from "@/components/site/contact-faq-section";
+export { WorkPageHeroSection } from "@/components/site/work-page-hero-section";
+export { WorkProjectsSection } from "@/components/site/work-projects-section";
+export { WorkCtaSection } from "@/components/site/work-cta-section";

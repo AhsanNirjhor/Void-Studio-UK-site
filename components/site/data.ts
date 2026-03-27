@@ -185,13 +185,133 @@ export type ContactFaqItem = {
   answer: string;
 };
 
+export type WorkStat = {
+  icon: "briefcase" | "users" | "trend" | "clock";
+  value: string;
+  label: string;
+};
+
+export type WorkCategory =
+  | "All"
+  | "AI Automation"
+  | "Accounting Automation"
+  | "Custom Software"
+  | "Data & BI"
+  | "Compliance";
+
+export type WorkProjectMetric = {
+  value: string;
+  label: string;
+};
+
+export type WorkProject = {
+  sector: string;
+  title: string;
+  description: string;
+  categories: Exclude<WorkCategory, "All">[];
+  metrics: [WorkProjectMetric, WorkProjectMetric, WorkProjectMetric];
+  highlightedTitle?: boolean;
+};
+
 export const navItems: NavItem[] = [
   { label: "Services", href: "/services" },
-  { label: "Work", href: "/#case-studies" },
+  { label: "Work", href: "/work" },
   { label: "MVP Validator", href: "/#process" },
   { label: "About", href: "/about" },
   { label: "Team", href: "/team" },
   { label: "For Startups", href: "/for-startups" },
+];
+
+export const workStats: WorkStat[] = [
+  { icon: "briefcase", value: "50+", label: "Projects Delivered" },
+  { icon: "users", value: "35+", label: "Happy Clients" },
+  { icon: "trend", value: "£2.4M", label: "Client ROI Generated" },
+  { icon: "clock", value: "15k+", label: "Hours Automated" },
+];
+
+export const workCategories: WorkCategory[] = [
+  "All",
+  "AI Automation",
+  "Accounting Automation",
+  "Custom Software",
+  "Data & BI",
+  "Compliance",
+];
+
+export const workProjects: WorkProject[] = [
+  {
+    sector: "LOGISTICS & FLEET",
+    title: "AI-Powered Fleet Management Platform",
+    description:
+      "Reduced dispatch time by 40% and increased fleet utilization by 28% with intelligent route optimization and predictive scheduling.",
+    categories: ["AI Automation", "Custom Software", "Data & BI"],
+    metrics: [
+      { value: "40%", label: "Faster dispatch" },
+      { value: "28%", label: "Fleet utilization" },
+      { value: "£180k", label: "Saved yearly" },
+    ],
+  },
+  {
+    sector: "PROFESSIONAL SERVICES",
+    title: "Multi-Client Accounting Automation Suite",
+    description:
+      "Cut bookkeeping time by 65% across 40+ SME clients with AI-powered reconciliation and anomaly detection.",
+    categories: ["Accounting Automation", "AI Automation"],
+    metrics: [
+      { value: "65%", label: "Less bookkeeping" },
+      { value: "40+", label: "Clients automated" },
+      { value: "20hrs/week", label: "Time saved" },
+    ],
+  },
+  {
+    sector: "HOSPITALITY",
+    title: "Multi-Location Restaurant Management Platform",
+    description:
+      "Increased table turnover by 25% and reduced no-shows by 60% with an intelligent booking system across 8 locations.",
+    categories: ["Custom Software", "AI Automation"],
+    metrics: [
+      { value: "25%", label: "Turnover increase" },
+      { value: "60%", label: "Fewer no-shows" },
+      { value: "8", label: "Locations unified" },
+    ],
+    highlightedTitle: true,
+  },
+  {
+    sector: "HEALTHCARE",
+    title: "Patient Booking & Triage System",
+    description:
+      "Automated 80% of appointment bookings and reduced admin workload by 60% with AI-powered patient triage.",
+    categories: ["AI Automation", "Custom Software"],
+    metrics: [
+      { value: "80%", label: "Bookings automated" },
+      { value: "60%", label: "Admin workload cut" },
+      { value: "4.8/5", label: "Patient satisfaction" },
+    ],
+  },
+  {
+    sector: "MANUFACTURING",
+    title: "Production Analytics & Forecasting Platform",
+    description:
+      "Improved production throughput by 15% and reduced waste by 22% with real-time BI dashboards.",
+    categories: ["Data & BI", "Custom Software"],
+    metrics: [
+      { value: "15%", label: "Throughput boost" },
+      { value: "22%", label: "Waste reduction" },
+      { value: "£250k", label: "Saved yearly" },
+    ],
+  },
+  {
+    sector: "FINANCIAL SERVICES",
+    title: "GDPR & FCA Compliance Framework",
+    description:
+      "Achieved full regulatory compliance and passed Series A due diligence with a comprehensive audit-trail system.",
+    categories: ["Compliance", "Custom Software"],
+    metrics: [
+      { value: "100%", label: "Audit pass rate" },
+      { value: "3x", label: "Faster reporting" },
+      { value: "0", label: "Compliance breaches" },
+    ],
+  },
 ];
 
 export const operationalCards: OperationalCardItem[] = [
