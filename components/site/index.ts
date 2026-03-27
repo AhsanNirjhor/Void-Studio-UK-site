@@ -40,3 +40,4 @@ export { ContactFaqSection } from "@/components/site/contact-faq-section";
 export { WorkPageHeroSection } from "@/components/site/work-page-hero-section";
 export { WorkProjectsSection } from "@/components/site/work-projects-section";
 export { WorkCtaSection } from "@/components/site/work-cta-section";
+export { InstantQuoteWizardSection } from "@/components/site/instant-quote-wizard-section";

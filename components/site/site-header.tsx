@@ -57,12 +57,12 @@ export function SiteHeader() {
           >
             Contact
           </Link>
-          <Button
-            variant="ghost"
-            className="hidden h-10 rounded-xl px-5 text-[0.92rem] font-semibold text-white xl:inline-flex"
+          <Link
+            href="/instant-quote"
+            className="hidden h-10 items-center rounded-xl px-5 text-[0.92rem] font-semibold text-white transition-colors hover:bg-[#151a3a] xl:inline-flex"
           >
             Get Instant Quote
-          </Button>
+          </Link>
           <Button
             variant="outline"
             size="icon"
@@ -97,7 +97,7 @@ export function SiteHeader() {
               Contact
             </Link>
             <Link
-              href="/#home"
+              href="/instant-quote"
               onClick={() => setIsMenuOpen(false)}
               className="inline-flex h-10 flex-1 items-center justify-center rounded-lg bg-linear-to-r from-[#5a1cf1] to-[#8a4dff] text-[0.92rem] font-semibold text-white"
             >
