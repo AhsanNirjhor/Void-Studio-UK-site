@@ -88,6 +88,29 @@ html {
   z-index: 1;
 }
 
+.mvp-validator-bg {
+  position: relative;
+  background:
+    linear-gradient(180deg, #3f109c 0%, #4d14b1 58%, #4d13b0 100%);
+}
+
+.mvp-validator-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(184, 163, 252, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(184, 163, 252, 0.06) 1px, transparent 1px);
+  background-size: 165px 165px;
+  opacity: 0.36;
+}
+
+.mvp-validator-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
 .muted-line {
   border-color: #25294c;
 }

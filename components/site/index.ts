@@ -41,3 +41,4 @@ export { WorkPageHeroSection } from "@/components/site/work-page-hero-section";
 export { WorkProjectsSection } from "@/components/site/work-projects-section";
 export { WorkCtaSection } from "@/components/site/work-cta-section";
 export { InstantQuoteWizardSection } from "@/components/site/instant-quote-wizard-section";
+export { MvpValidatorExperienceSection } from "@/components/site/mvp-validator-experience-section";

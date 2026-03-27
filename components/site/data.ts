@@ -216,7 +216,7 @@ export type WorkProject = {
 export const navItems: NavItem[] = [
   { label: "Services", href: "/services" },
   { label: "Work", href: "/work" },
-  { label: "MVP Validator", href: "/#process" },
+  { label: "MVP Validator", href: "/mvp-validator" },
   { label: "About", href: "/about" },
   { label: "Team", href: "/team" },
   { label: "For Startups", href: "/for-startups" },
